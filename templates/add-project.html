@@ -1,0 +1,15 @@
+{% extends 'bootstrap/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+{% include "header.html" %}
+<body>
+ <div class="container">
+  <div class="row">
+   <h1>PLEASE ADD A NEW TEXT PROJECT: </h1>
+ {{ wtf.quick_form(form, novalidate=True, button_map={"submit": "primary"}) }}
+  </div>
+ </div>
+</body>
+</html>
+{% endblock %}

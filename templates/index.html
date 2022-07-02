@@ -1,0 +1,39 @@
+{% extends 'bootstrap/base.html' %}
+{% include "header_refresh.html" %}
+
+{% block content %}
+<body>
+    <div class="Container Project_List">
+        <div class="row">
+        <div class="col-md-1" id="Item_col">
+            <h1>ITEM#</h1>
+            {% for proj in all_proj %}
+            <p>{{proj.id}}</p>
+            {% endfor %}
+        </div>
+
+        <div class="col-md-3" id="Name_col">
+            <h1>NAME</h1>
+            {% for proj in all_proj %}
+            <p>{{proj.Project_code}}</p>
+            {% endfor %}
+        </div>
+
+        <div class="col-md-3" id="Status_col">
+            <h1>STATUS</h1>
+            {% for proj in all_proj %}
+            <p>{{proj.Status}}</p>
+            {% endfor %}
+        </div>
+
+        <div class="col-md-4" id="Desc_col">
+            <h1>DESCRIPTION</h1>
+            {% for proj in all_proj %}
+            <p>{{proj.Description}}</p>
+            {% endfor %}
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,31 @@
+.Project_List
+{
+    margin: 5%;
+}
+
+#Item_col
+{
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+
+#Name_col
+{
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+
+#Status_col
+{
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+
+#Desc_col
+{
+display: inline-block;
+float: right;
+}
