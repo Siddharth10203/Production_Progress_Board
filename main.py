@@ -10,7 +10,6 @@ from sqlalchemy.orm import relationship
 import os
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 app.config['SECRET_KEY'] = 'ABCD'
 Bootstrap(app)
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///production_projects.db'
